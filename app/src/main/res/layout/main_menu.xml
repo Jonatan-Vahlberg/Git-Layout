@@ -16,13 +16,19 @@
         android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20sp"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lorem"
-        android:layout_margin="20dp"/>
+        android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="100sp"
+        android:hint="@string/lorem"/>
     <LinearLayout
+        android:layout_marginHorizontal="15sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -31,14 +37,17 @@
             android:layout_weight="0.6"
             android:text="Load Constraint Layout"
             android:paddingStart="20dp"
-            android:gravity="center|left"/>
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"/>
         <Button
+            android:id="@+id/load_constraint"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="0.4"
             android:text="Load"/>
     </LinearLayout>
     <LinearLayout
+        android:layout_marginHorizontal="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -47,8 +56,10 @@
             android:layout_weight="0.6"
             android:text="Load TableLayout"
             android:paddingStart="20dp"
-            android:gravity="center|left"/>
+            android:gravity="center_vertical"
+            android:textSize="18sp"/>
         <Button
+            android:id="@+id/load_table"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="0.4"
@@ -59,7 +70,6 @@
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:set/>
+        android:layout_gravity="center" />
 
 </LinearLayout>

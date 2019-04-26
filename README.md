@@ -1,1 +1,1 @@
-"#Exploring Various Layouts" 
+#Exploring Various Layouts
